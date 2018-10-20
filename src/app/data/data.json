@@ -1,0 +1,12 @@
+{
+	"social_networks": [
+		{"name": "Facebook", "url": "https://www.facebook.com"},
+		{"name": "Twitter", "url": "https://www.twitter.com"},
+	],
+	"modules": [
+		{"url": "home", "name": "Inicio"},
+		{"url": "our-work", "name": "Nuestro trabajo"},
+		{"url": "about-us", "name": "Nosotros"},
+		{"url": "contact", "name": "Contacto"}
+	]
+}
