@@ -7,8 +7,8 @@ import { OurWorkComponent } from './modules/our-work/our-work.component';
 import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [
-	{path: '', pathMatch: 'full', component: HomeComponent},
 	{path: 'home', component: HomeComponent},
+	{path: '', redirectTo: 'home', pathMatch: 'full'},
 	{path: 'contact', component: ContactComponent},
 	{path: 'about-us', component: AboutUsComponent},
 	{path: 'our-work', component: OurWorkComponent},
@@ -17,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
 	imports: [
-		RouterModule.forRoot(routes, {useHash: true})
+		RouterModule.forRoot(routes)
 	],
 	exports: [
 		RouterModule
